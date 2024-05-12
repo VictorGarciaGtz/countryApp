@@ -15,9 +15,6 @@ export class ByCapitalPageComponent {
 
   }
 
-  @ViewChild('TxtSearchInput')
-  public txtSeach!: ElementRef<HTMLInputElement>;
-
   searchByCapital( term: string ){
     this.countriesService.searchCapital( term )
     .subscribe( countries => {
